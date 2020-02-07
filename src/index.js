@@ -5,7 +5,7 @@ import Token from "./Components/Token";
 import Navbar from "./Components/Navbar";
 import UploadFile from "./Components/UploadFile"
 
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <Router>

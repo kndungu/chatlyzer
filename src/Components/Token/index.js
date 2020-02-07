@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,7 +9,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./Token.css";
 
 export default class App extends Component {
   state = {
@@ -21,12 +22,13 @@ export default class App extends Component {
     this.setState({ token: value });
   };
 
-  storeToken = (e) => {
-    e.preventDefault()
-    const { localStorage } = window;
+  storeToken = e => {
+    e.preventDefault();
+    const { localStorage, location } = window;
     const { token } = this.state;
 
     localStorage.setItem("DW_API_TOKEN", token);
+    location.href = "/upload";
   };
 
   render() {

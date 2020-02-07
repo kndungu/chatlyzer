@@ -10,9 +10,8 @@ export default class UploadFile extends Component {
   }
 
   parseMessages = messages => {
-    //   console.log('The messages', messages)
-    // const ab = messages.split(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-
+    const { localStorage, location } = window;
+  
     messages.shift();
     const chunkedMessages = chunk(messages, 4);
 
@@ -48,16 +47,16 @@ export default class UploadFile extends Component {
         message: getMessage(getMessageUser(message[3]))
       };
     });
-    console.log(parsedMessage);
+
+
+    localStorage.setItem("PARSED_MESSAGES", JSON.stringify(parsedMessage));
+    location.href = "/analysis";
   };
 
   handleFileRead = e => {
     const content = this.fileReader.result;
     const messages = content.split(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-    console.log("The messagaes", messages);
     this.parseMessages(messages);
-    // this.setState({ messages });
-    // return messages;
   };
 
   handleFileChosen = file => {

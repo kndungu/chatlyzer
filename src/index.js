@@ -4,6 +4,7 @@ import "./index.css";
 import Token from "./Components/Token";
 import Navbar from "./Components/Navbar";
 import UploadFile from "./Components/UploadFile"
+import Analysis from './Components/Analysis'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -12,8 +13,8 @@ ReactDOM.render(
     <div>
       <Navbar />
       <Switch>
-        <Route path="/about">
-          <div>Users</div>
+        <Route path="/analysis">
+          <Analysis />
         </Route>
         <Route path="/upload">
           <UploadFile />

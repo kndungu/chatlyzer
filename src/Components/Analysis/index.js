@@ -134,6 +134,58 @@ export default class UploadFile extends Component {
     );
   };
 
+  getHourOfDay = () => {
+    const times = [];
+
+    this.parsedMessage.forEach(message => {
+      const month = `${message.month}`;
+      console.log('The time', message.time)
+      const hours = message.time.split(":")[0];
+
+      const dateTime = new Date(
+        `${message.year}-${month}-${message.day}T${hours}:${message.time.split(":")[1]}`
+      );
+      console.log(
+        "Tis is the string",
+        `${message.year}-${month}-${message.day}T${hours}:${message.time.split(":")[1]}`
+      );
+      console.log("This is the dateTime", dateTime);
+
+      const hourOfDay = dateTime.getHours();
+
+      if (times.some(time => time.hourOfDay === hourOfDay)) {
+        const index = times.findIndex(time => time.hourOfDay === hourOfDay);
+        times.splice(index, 1, {
+          hourOfDay: hourOfDay,
+          messageCount: times[index].messageCount + 1
+        });
+      } else {
+        times.push({ hourOfDay, messageCount: 0 });
+      }
+    });
+
+    console.log("The times", times);
+
+    const result = times.filter(time => time.messageCount > 6);
+    return (
+      <Card style={{ width: "28rem", margin: "0 auto", marginTop: "1.5rem" }}>
+        <Card.Body>
+          <Card.Title>Questions by time of day</Card.Title>
+          {result.map(m => {
+            return (
+              <Card.Text>
+                <div>
+                  <b>{m.hourOfDay}</b>
+                </div>
+                <div>{m.messageCount}</div>
+              </Card.Text>
+            );
+          })}
+        </Card.Body>
+      </Card>
+    );
+  };
+
   render() {
     return (
       <Container>
@@ -144,6 +196,7 @@ export default class UploadFile extends Component {
               {this.getTotalMessagesByUser()}
               {this.getTotalMessagesWithEmojis()}
               {this.getTotalMessagesWithQuestions()}
+              {this.getHourOfDay()}
             </div>
           </Col>
         </Row>

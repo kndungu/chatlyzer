@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.9"],\
             ["@vitejs/plugin-react", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:2.2.0"],\
+            ["husky", "npm:8.0.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
@@ -814,6 +815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.25"],\
             ["@types/react-dom", "npm:18.0.9"],\
             ["@vitejs/plugin-react", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:2.2.0"],\
+            ["husky", "npm:8.0.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
@@ -1395,6 +1397,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["humanize-ms", "npm:1.2.1"],\
             ["ms", "npm:2.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["husky", [\
+        ["npm:8.0.2", {\
+          "packageLocation": "./.yarn/cache/husky-npm-8.0.2-46c70b41ed-e101656fcb.zip/node_modules/husky/",\
+          "packageDependencies": [\
+            ["husky", "npm:8.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

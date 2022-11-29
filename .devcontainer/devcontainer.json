@@ -14,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "git config push.default current",
+	"postCreateCommand": "git config push.default current && chmod ug+x /workspaces/chatlyzer/.husky/*",
 
 	// Configure tool-specific properties.
 	"customizations": {

@@ -1,40 +1,38 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-  "name": "Node.js & TypeScript",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:18-buster",
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
+	"name": "Node.js & TypeScript",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:18-buster",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
 
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
 
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "git config push.default current",
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "git config push.default current",
 
-  // Configure tool-specific properties.
-  "customizations": {
-    // Configure properties specific to VS Code.
-    "vscode": {
-      // Set *default* container specific settings.json values on container create.
-      "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "terminal.integrated.defaultProfile.linux": "zsh"
-      },
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+		  // Set *default* container specific settings.json values on container create.
+		  "settings": {
+			"terminal.integrated.defaultProfile.linux": "zsh"
+		  },
+	
+		  // Add the IDs of extensions you want installed when the container is created.
+		  "extensions": [
+			"arcanis.vscode-zipfs",
+			"ue.alphabetical-sorter"
+		  ]
+		}
+	  }
 
-      // Add the IDs of extensions you want installed when the container is created.
-      "extensions": [
-        "arcanis.vscode-zipfs",
-        "esbenp.prettier-vscode",
-        "ue.alphabetical-sorter"
-      ]
-    }
-  }
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }

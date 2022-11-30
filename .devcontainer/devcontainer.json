@@ -6,33 +6,38 @@
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {}
 	},
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "git config push.default current && chmod ug+x /workspaces/chatlyzer/.husky/*",
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-		  // Set *default* container specific settings.json values on container create.
-		  "settings": {
-			"terminal.integrated.defaultProfile.linux": "zsh"
-		  },
-	
-		  // Add the IDs of extensions you want installed when the container is created.
-		  "extensions": [
-			"arcanis.vscode-zipfs",
-			"ue.alphabetical-sorter"
-		  ]
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true,
+				"files.autoSave": "off",
+				"files.associations": {
+					"*.css": "tailwindcss"
+				},
+				"editor.quickSuggestions": {
+				    "strings": true
+				}
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"arcanis.vscode-zipfs",
+				"ue.alphabetical-sorter",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss"
+			]
 		}
-	  }
-
+	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

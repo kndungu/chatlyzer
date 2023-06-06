@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:18.2.0"],\
             ["tailwindcss", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
-            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"]\
+            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.7"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -664,7 +664,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/vite", null],\
             ["magic-string", "npm:0.26.7"],\
             ["react-refresh", "npm:0.14.0"],\
-            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"]\
+            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.7"]\
           ],\
           "packagePeers": [\
             "@types/vite",\
@@ -973,7 +973,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:18.2.0"],\
             ["tailwindcss", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"],\
-            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"]\
+            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.7"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2906,17 +2906,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["vite", [\
-        ["npm:3.2.4", {\
-          "packageLocation": "./.yarn/cache/vite-npm-3.2.4-bd281d599b-0f3e8f89c1.zip/node_modules/vite/",\
+        ["npm:3.2.7", {\
+          "packageLocation": "./.yarn/cache/vite-npm-3.2.7-dc0dc30c5d-4c5883b721.zip/node_modules/vite/",\
           "packageDependencies": [\
-            ["vite", "npm:3.2.4"]\
+            ["vite", "npm:3.2.7"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4", {\
-          "packageLocation": "./.yarn/__virtual__/vite-virtual-6cc4b4dd6e/0/cache/vite-npm-3.2.4-bd281d599b-0f3e8f89c1.zip/node_modules/vite/",\
+        ["virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.7", {\
+          "packageLocation": "./.yarn/__virtual__/vite-virtual-1b85d0f8fd/0/cache/vite-npm-3.2.7-dc0dc30c5d-4c5883b721.zip/node_modules/vite/",\
           "packageDependencies": [\
-            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.4"],\
+            ["vite", "virtual:aaefd1833fb0f4edaa2fbe369ccc0a842942169338461c21d6c85a8b2a1ed7bd46781858afa7bb6548ec3056e2ab65c7cab87f1ecc47e9011192c6cf7002593f#npm:3.2.7"],\
             ["@types/less", null],\
             ["@types/node", null],\
             ["@types/sass", null],\
